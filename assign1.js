@@ -7,7 +7,7 @@
 
 let price=30;
 function calculateFruitCost(fruitName,quantity){
-    const fruitObj=[
+    var fruitObj=[
         {fruit:"Oranges",price:30.00},
         {fruit:"Bananas",price:20.00}
     ]

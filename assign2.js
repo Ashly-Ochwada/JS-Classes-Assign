@@ -11,12 +11,12 @@ class KioskCalc{
     constructor(fruit,quantity){
         this.fruit=fruit;
         this.quantity=quantity;
-        this.fruitPriceList={"Banana":30, "Strawberry":60,"Apples":50}
+        this.fruitPriceList={"orange":30, "mango": 15,"avocado":40}
         this.getCost=function(){
-            return`${quantity} ${fruit} for KES ${quantity*this.fruitPriceList.Apples}`
+            return`${quantity} ${fruit} for KES ${quantity*this.fruitPriceList.orange}`
         }
     }
 }
 
-var kiosk=new KioskCalc("Apples",2);
+var kiosk=new KioskCalc("orange",2);
 console.log(kiosk.getCost());

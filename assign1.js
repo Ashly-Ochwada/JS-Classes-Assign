@@ -5,14 +5,19 @@
 // calculateFruitCost(fruitName, quantity)
 // For example, calculateFruitCost('orange', 2) should return "2 Oranges for KES 60.00"
 
-let price=30;
-function calculateFruitCost(fruitName,quantity){
-    var fruitObj=[
-        {fruit:"Oranges",price:30.00},
-        {fruit:"Bananas",price:20.00}
-    ]
-    fruitObj.find(item => item.fruit===fruitName)
-    let fruitPrice=price
-    console.log(`${quantity} ${fruitName} for KES ${fruitPrice*quantity}`)
-}
-calculateFruitCost("Orange",3)
+ var fruitObj=[
+    {
+        fruit:"Oranges",
+        price:30.00
+        },
+        {
+        fruit:"Bananas",
+        price:20.00,
+       }
+]
+    function getTotalCost(fruitName,quantity){
+    let m = fruitObj.find(item => item.fruit===fruitName)
+    console.log(`${quantity} ${fruitName} for KES ${m.price*quantity}`)}
+
+getTotalCost("Oranges",3)
+    
